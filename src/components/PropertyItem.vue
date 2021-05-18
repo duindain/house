@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  props: ['title','index'],
+  props: ['title','index','currentIndex'],
   emits: ['remove', 'openHouse', 'deleteHouse']
 }
 </script>

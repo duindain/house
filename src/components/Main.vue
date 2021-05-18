@@ -38,8 +38,8 @@
                      inputPlaceholder="Select features ..." 
                      :allowPaste="{delimiter: ','}" 
                      :allowDuplicates="false" 
-                     :defaultTags="v-model.selectedtags"
-                     :sources="v-model.existingtags"
+                     :defaultTags="selectedtags"
+                     :sources="existingtags"
                      :maxTags="20" 
                      :theme="{
                         primary: '#545454',
