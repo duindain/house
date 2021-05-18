@@ -1,17 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div class="row align-items-start">    
+      <LeftNav msg="boo"/>
+      <Main/>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LeftNav from './components/LeftNav.vue'
+import Main from './components/Main.vue'
+import { defineComponent } from "vue";
 
-export default {
-  name: 'App',
+export default defineComponent({
+  name: "Basic",
   components: {
-    HelloWorld
+    LeftNav,
+    Main
   }
-}
+});
+
+//LeftNav.methods.updatePropertyList();
+
 </script>
 
 <style>
